@@ -5,6 +5,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Login from './Pages/Login'
 import Hero from './Pages/student/Hero'
 import MainLayout from './layout/mainLayout'
+import Courses from './Pages/student/Courses'
+import MyLearning from './Pages/student/MyLearning'
 
 // Create router with proper nested routes
 const appRouter = createBrowserRouter([
@@ -14,11 +16,14 @@ const appRouter = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Hero />
+        element:<><Hero /> <Courses/></> 
       },
       {
         path: 'auth',
         element: <Login />
+      },{
+        path:'my-learning',
+        element:<MyLearning/>
       }
     ]
   }

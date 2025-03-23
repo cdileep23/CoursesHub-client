@@ -67,7 +67,10 @@ const UserMenu = ({ userRole }) => (
       </Avatar>
     </DropdownMenuTrigger>
     <DropdownMenuContent>
+      <Link to="/my-learning">
       <DropdownMenuLabel>My Learning</DropdownMenuLabel>
+      </Link>
+      
       <DropdownMenuItem>Edit Profile</DropdownMenuItem>
       <DropdownMenuItem className='flex items-center text-red-600'>
         <LogOutIcon color="red" size={12} className="mr-2" />

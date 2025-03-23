@@ -9,11 +9,11 @@ const MainLayout = () => {
   return (
     <div>
       {!isAuthRoute && <Navbar />}
-      <div>
+      <div className={isAuthRoute ? '' : 'pt-16'}>
         <Outlet />
       </div>
     </div>
   )
 }
 
-export default MainLayout
+export default MainLayout;
